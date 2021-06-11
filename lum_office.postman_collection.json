@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "03ba20de-387a-42aa-a3f9-5f33df3f2364",
+		"name": "lum_office",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "get_emplyees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/employees",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post_employees",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "from api 2",
+									"type": "text"
+								},
+								{
+									"key": "telephone",
+									"value": "123311rr",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "fr@sass",
+									"type": "text"
+								},
+								{
+									"key": "id_department",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/employees",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put_employees",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/employees/posts/35?name=saya rubah ya&telephone=3322&email=erubag@w&id_department=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"employees",
+								"posts",
+								"35"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "saya rubah ya"
+								},
+								{
+									"key": "telephone",
+									"value": "3322"
+								},
+								{
+									"key": "email",
+									"value": "erubag@w"
+								},
+								{
+									"key": "id_department",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_employees",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/employees/delete/35",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"employees",
+								"delete",
+								"35"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "get_departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/departments",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"departments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
